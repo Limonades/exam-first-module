@@ -1,0 +1,50 @@
+.main {
+	&__content {
+		display: flex;
+		justify-content: space-around;
+		&__article {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			&-title {
+				color: #ffffff;
+				font-family: $lato-font-family;
+				font-size: 45px;
+				font-weight: 400;
+				line-height: 90px;
+				text-transform: uppercase
+			}
+			&-text {
+				width: 516px;
+				height: 78px;
+				color: #ffffff;
+				font-family: $lato-font-family;
+				font-size: 16px;
+				font-weight: 100;
+				line-height: 28px;
+				overflow: hidden;
+				margin-bottom: 70px;
+			}
+			&-link {
+				width: 42px;
+				height: 13px;
+				color: #ffffff;
+				font-family: Lato;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 28px;
+				text-decoration: underline;
+				&:hover {
+					color: red;
+				}
+			}
+		}
+		&__photo {
+			display: flex;
+			line-height: 0;
+			&-link {
+				margin-top: 80px;
+			}
+		}
+	}
+}

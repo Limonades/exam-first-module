@@ -1,0 +1,120 @@
+.main {
+	&__work {
+		&__container {
+		}
+		&__subtitle {
+			padding-top: 120px;
+			padding-bottom: 80px;
+			color: #222222;
+			font-family: $raleway-font-family;
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 60px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		&__line {
+			width: 86px;
+			height: 2px;
+			background-color: #222222;
+			margin: 0 auto;
+			margin-bottom: 90px;
+		}
+		&__flex-items {
+			display: flex;
+			list-style: none;
+			margin-bottom: 100px;	
+		}
+		&__image-wrap {
+			margin: 0 15px;
+			position: relative;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			z-index: 1;
+			&:before {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					background-color: rgba(64, 64, 64, 0.8);
+					z-index: -1;
+					opacity: 0;
+					transition: opacity .3s ease;
+			}
+			&--active:before {
+				opacity: 1;
+			}
+			&:not(.main__work__image-wrap--active):hover:before {
+				opacity: 1;
+			}
+			&--first {
+				background-image: url('../../img/layer-17.png');
+			}
+			&--second {
+				background-image: url('../../img/layer-16.png');
+			}
+			&--third {
+				background-image: url('../../img/layer-21.png');
+			}
+			&:not(.main__work__text-wrap--active):hover .main__work__text-wrap {
+				opacity: 1;
+			}
+		}
+		&__text-wrap {
+			display: inline-block;
+			opacity: 0;
+			transition: opacity .3s ease;
+			&--active {
+				opacity: 1;
+			}
+		}
+		&__text {
+			text-decoration: none;
+			text-align: center;
+			display: table-cell;/*for align*/
+    		vertical-align: middle;/*for align*/
+			width: 370px;/*for align*/
+    		color: #ffffff;
+			line-height: 60px;
+			height: 420px;
+		}
+		&__title {
+			margin: 20px 0;
+			text-transform: uppercase;
+			font-family: $lato-font-family;			
+		}
+		&__icon {
+			padding: 0;
+			color: #fff;
+			line-height: 30px;
+			font-size: 40px;
+			&--fa-link {
+				font-family: 'FontAwesome';
+			}
+		}
+		&__form {
+			display: flex;
+			justify-content: center;
+			&-button {
+				background-color: transparent;
+				margin-bottom: 100px;
+				border: 3px solid black;
+				padding: 15px 148px;
+				font-family: $lato-font-family;
+				font-size: 24px;
+				font-weight: 400;
+				text-transform: uppercase;	
+				transition: all .3s ease;
+					&:hover {
+						cursor: pointer;
+						border: 3px solid black;
+						background-color: black;
+						color: white;
+					}		
+			}
+		}
+
+	}
+}
