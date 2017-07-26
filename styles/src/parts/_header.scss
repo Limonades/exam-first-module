@@ -9,6 +9,7 @@
 		}
 	}
 	&__logo {
+		padding-left: 30px;	
 		float: left;
 	}
 	&__nav {
@@ -23,8 +24,9 @@
 			padding-left: 25px;
 			padding-right: 25px;
 			font-family: $lato-font-family;
+			transition: all .3s ease;
 			&--last {
-				padding-right: 0;
+				padding-right: 30;
 			}
 				&:hover {
 					color: red;
