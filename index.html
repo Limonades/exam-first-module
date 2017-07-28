@@ -6,6 +6,7 @@
 		<title>exam Elegant</title>
 		<link rel="shortcut icon" href="img/title.png" type="image/png">
 		<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 		<link rel="stylesheet" href="styles/dist/style.css">
         <link rel="stylesheet" href="styles/ie.css">
 
@@ -26,10 +27,10 @@
 				<!-- end.header__logo -->
 				<ul class="header__nav">
 					<li class="header__nav__items"><a class="header__nav__links" href="#">HELLO</a></li>
-					<li class="header__nav__items"><a class="header__nav__links" href="#">SERVICES</a></li>
-					<li class="header__nav__items"><a class="header__nav__links" href="#">ABOUT US</a></li>
-					<li class="header__nav__items"><a class="header__nav__links" href="#">OUR WORK</a></li>
-					<li class="header__nav__items"><a class="header__nav__links header__nav__links--last" href="#">CONTACT US</a></li>
+					<li class="header__nav__items"><a class="header__nav__links" href="#main">SERVICES</a></li>
+					<li class="header__nav__items"><a class="header__nav__links" href="#about-us">ABOUT US</a></li>
+					<li class="header__nav__items"><a class="header__nav__links" href="#our-works">OUR WORK</a></li>
+					<li class="header__nav__items"><a class="header__nav__links header__nav__links--last" href="#footer">CONTACT US</a></li>
 				</ul>
 				<!-- end.header__logo -->
 				<section class="header__info">
@@ -42,12 +43,12 @@
 					</h2>
 				</section>
 				<!-- end.header__info -->
-				<div class="header__button"></div>
+				<a href="javasript://0" class="header__button"></a>
 			</div>
 			<!-- end.container -->
 		</header>
 		<!-- end.header -->
-		<main class="main">
+		<main class="main" id="main">
 			<div class="main__container container">
 				<h1 class="main__title">our services</h1>
 				<div class="main__line"></div>
@@ -86,34 +87,83 @@
 				<!-- end.section__services -->
 			</div>
 			<!-- end.main__container -->
-			<div class="main__content-bacground">
-				<div class="container">
-					<div class="main__content">
-						<article class="main__content__article">
-							<h2 class="main__content__article-title">
-							dolore magna aliqua
-							</h2>
-							<p class="main__content__article-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-							</p>
-							<a class="main__content__article-link" href="#">
-								more
-							</a>
-						</article>
-						<!-- end.main__content__article -->
-						<div class="main__content__photo">
-							<a class="main__content__photo-link" href="#">
-								<img class="main__content__photo-image" src="img/layer-15.png" alt="tel">
-							</a>
+			<div class="main__content-bacground" id="about-us">
+				<div class="container main__slider-container">
+					<div class="main__content main__slider-container__slides">
+						<div class="main__slider-container__slides-items">
+							<article class="main__content__article main__slider-container__slides-items--first">
+								<h2 class="main__content__article-title">
+									dolore magna aliqua
+								</h2>
+								<p class="main__content__article-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+								</p>
+								<a class="main__content__article-link" href="#">
+									more
+								</a>
+							</article>
+							<!-- end.main__content__article -->
+							<div class="main__content__photo main__slider-container__slides-items--second">
+								<a class="main__content__photo-link" href="#">
+									<img class="main__content__photo-image" src="img/layer-15.png" alt="tel">
+								</a>
+							</div>
+							<!-- end.main__content__photo -->
 						</div>
-						<!-- end.main__content__photo -->
+						<!-- end.main__slider-container__slides-items -->
+
+						<div class="main__slider-container__slides-items">
+							<article class="main__content__article">
+								<h2 class="main__content__article-title">
+									dolore magna aliqua
+								</h2>
+								<p class="main__content__article-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+								</p>
+								<a class="main__content__article-link" href="#">
+									more
+								</a>
+							</article>
+							<!-- end.main__content__article -->
+							<div class="main__content__photo">
+								<a class="main__content__photo-link" href="#">
+									<img class="main__content__photo-image" src="img/SparklingGrapefruit-Can-260x425.png" alt="tel">
+								</a>
+							</div>
+							<!-- end.main__content__photo -->
+						</div>
+						<!-- end.main__slider-container__slides-items -->
+
+						<div class="main__slider-container__slides-items">
+							<article class="main__content__article">
+								<h2 class="main__content__article-title">
+									dolore magna aliqua
+								</h2>
+								<p class="main__content__article-text">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt ut laboreet dolore magna aliqua. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+								</p>
+								<a class="main__content__article-link" href="#">
+									more
+								</a>
+							</article>
+							<!-- end.main__content__article -->
+							<div class="main__content__photo">
+								<a class="main__content__photo-link" href="#">
+									<img class="main__content__photo-image" src="img/basklogo-260x425.jpg" alt="tel">
+								</a>
+							</div>
+							<!-- end.main__content__photo -->
+						</div>
+						<!-- end.main__slider-container__slides-items -->
 					</div>
 					<!-- end.main__content -->
+					<div class="main__slider-container__button main__slider-container__button--prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+					<div class="main__slider-container__button main__slider-container__button--next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
 				</div>
 				<!-- end.container -->
 			</div>
 			<!-- end.main__content-bacground -->
-			<section class="main__work">
+			<section class="main__work" id="our-works">
 				<div class="main__work__container container">
 					<h2 class="main__work__subtitle">
 					our work
@@ -153,6 +203,43 @@
 							<!-- main__work__text-wrap-third -->
 						</div>
 						<!-- main__work__image-wrap-third -->
+
+						<div class="main__work__hidden">
+							<div class="main__work__image-wrap main__work__hidden-image-wrap--first">
+								<div class="main__work__text-wrap">
+									<a href="#" class="main__work__text main__work__hidden-text--first">
+										<h2 class="main__work__title">kinderen planet</h2>
+										<i class="main__work__icon fa fa-link main__work__icon--fa-link" aria-hidden="true"></i>
+									</a>
+									<!-- end."main__work__text -->
+								</div>
+								<!-- main__work__text-wrap-second -->
+							</div>
+							<!-- main__work__image-wrap-second -->
+							<div class="main__work__image-wrap main__work__hidden-image-wrap--second">
+								<div class="main__work__text-wrap ">
+									<a href="#" class="main__work__text main__work__hidden-text--second">
+										<h2 class="main__work__title">kinderen planet</h2>
+										<i class="main__work__icon fa fa-link main__work__icon--fa-link" aria-hidden="true"></i>
+									</a>
+									<!-- end."main__work__text -->
+								</div>
+								<!-- main__work__text-wrap-active -->
+							</div>
+							<!-- main__work__image-wrap-active -->
+							<div class="main__work__image-wrap main__work__hidden-image-wrap--third">
+								<div class="main__work__text-wrap">
+									<a href="#" class="main__work__text main__work__hidden-text--third">
+										<h2 class="main__work__title">kinderen planet</h2>
+										<i class="main__work__icon fa fa-link main__work__icon--fa-link" aria-hidden="true"></i>
+									</a>
+									<!-- end."main__work__text -->
+								</div>
+								<!-- main__work__text-wrap-third -->
+							</div>
+							<!-- main__work__image-wrap-third -->						
+						</div>
+						<!-- end.main__work__hidden-wraps -->
 					</div>
 					<form class="main__work__form" action="POST">
 						<button class="main__work__form-button" type="button">more</button>
@@ -164,7 +251,7 @@
 			<!-- end.main__work -->
 		</main>
 		<!-- end.main -->
-		<footer class="footer">
+		<footer class="footer" id="footer">
 			<div class="footer__container container">
 				<h2 class="footer__subtitle">
 				get in touch
@@ -217,6 +304,7 @@
 			<!-- end.footer__container -->
 		</footer>
 		<!-- end.footer -->
+	<script src="js/script.js"></script>	
 	</body>
 	<!-- vlad.limonade -->
 </html>

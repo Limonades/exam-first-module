@@ -22,11 +22,14 @@
 		}
 		&__flex-items {
 			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
 			list-style: none;
 			margin-bottom: 100px;	
 		}
 		&__image-wrap {
 			margin: 0 15px;
+			margin-top: 20px;
 			position: relative;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -61,6 +64,22 @@
 			&:not(.main__work__text-wrap--active):hover .main__work__text-wrap {
 				opacity: 1;
 			}
+		}
+		&__hidden {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+				&-image-wrap{
+					&--first {
+						background-image: url('../../img/1-370x420.jpg');
+					}
+					&--second {
+						background-image: url('../../img/foto1-1-370x420.jpg');
+					}
+					&--third {
+						background-image: url('../../img/home-cover-370x420.jpg');
+					}
+				}
 		}
 		&__text-wrap {
 			display: inline-block;

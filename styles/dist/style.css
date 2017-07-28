@@ -98,6 +98,7 @@ header
     background-color: #ffffff;
     margin-bottom: 50px; }
 .header__button {
+  display: block;
   margin: auto;
   background: url("../../img/sprite.png") no-repeat;
   background-position: 0 0;
@@ -212,6 +213,33 @@ main-content
       margin-top: 80px; }
 
 /*-------------------------------------------------
+main-content-slider
+-------------------------------------------------*/
+.main__slider-container {
+  position: relative;
+  overflow: hidden; }
+  .main__slider-container__slides {
+    position: relative; }
+    .main__slider-container__slides-items {
+      display: flex;
+      justify-content: space-around; }
+  .main__slider-container__button {
+    position: absolute;
+    color: white;
+    padding: 10px 20px;
+    display: none; }
+    .main__slider-container__button:hover {
+      cursor: pointer; }
+    .main__slider-container__button--prev {
+      left: 15px;
+      top: 250px;
+      font-size: 40px; }
+    .main__slider-container__button--next {
+      right: 20px;
+      top: 250px;
+      font-size: 40px; }
+
+/*-------------------------------------------------
 main-work
 -------------------------------------------------*/
 .main__work__subtitle {
@@ -232,10 +260,13 @@ main-work
   margin-bottom: 90px; }
 .main__work__flex-items {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style: none;
   margin-bottom: 100px; }
 .main__work__image-wrap {
   margin: 0 15px;
+  margin-top: 20px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,6 +294,16 @@ main-work
     background-image: url("../../img/layer-21.png"); }
   .main__work__image-wrap:not(.main__work__text-wrap--active):hover .main__work__text-wrap {
     opacity: 1; }
+.main__work__hidden {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .main__work__hidden-image-wrap--first {
+    background-image: url("../../img/1-370x420.jpg"); }
+  .main__work__hidden-image-wrap--second {
+    background-image: url("../../img/foto1-1-370x420.jpg"); }
+  .main__work__hidden-image-wrap--third {
+    background-image: url("../../img/home-cover-370x420.jpg"); }
 .main__work__text-wrap {
   display: inline-block;
   opacity: 0;

@@ -1,0 +1,33 @@
+.main {
+	&__slider-container {
+		position: relative;
+		overflow: hidden;
+		&__slides {
+
+			position: relative;
+			&-items {
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+		&__button {
+			position: absolute;
+			color: white;
+			padding: 10px 20px;
+			display: none;
+			&:hover {
+				cursor: pointer;
+			}
+			&--prev {
+				left: 15px;
+				top: 250px;
+				font-size: 40px;
+			}
+			&--next {
+				right: 20px;
+			    top: 250px;
+			    font-size: 40px;
+			}
+		}
+	}
+}
